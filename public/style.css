@@ -1,0 +1,170 @@
+html, body{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: #f9f9f9;
+}
+
+/*Edição Header*/
+header, main, footer{
+    text-align: center;
+}
+
+
+header, .form, main{
+    margin: 0 auto 70px;
+    width: 90%;
+    max-width: 500px;
+}
+
+header h1, main h2{
+    margin-bottom: 70px;
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+header .logo{
+    width: 120px;
+    margin: 60px 0 50px;
+}
+
+header p{
+    font-size: 14px;
+}
+
+header button{
+    background-color: #ff4f4f;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #ff4f4f;
+    border-radius: 3.5px;
+    margin: 15px;
+    padding: 8px;
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+/*Edição Classes*/
+main .donors{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.donor p{   
+    margin: 24px 0;
+    margin-bottom: 64px;
+    font-size: 14px;
+}
+
+main h2 span{
+    color: red;
+}
+
+.blood{
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    justify-content: center;
+    
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    
+    padding: 15px;
+}
+
+.blood::before{
+    content: "";
+    background-color: #ff4f4f11;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(315deg);
+    border: 1px solid red;
+    
+}
+
+section.form{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: red;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section.form h2{
+    text-align: right;
+    margin: auto;
+    padding-right: 20px;
+    font-size: 1.4em;
+}
+
+form input,
+form button{
+    width: 100%;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px red solid;
+}
+
+section.form button{
+    color: rgba(0, 0, 0,1);
+    background-color: white;
+}
+
+section.form button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(136, 7, 7, 0.7);
+}
+
+section.form input{
+    background-color: rgba(136, 7, 7, 1);
+    border: 1px white solid;
+    color: white;
+}
+
+form input::placeholder{
+    color: white;
+}
+
+section.form h2{
+    color: white;
+}
+
+section.form{
+    transition: all 500ms;
+}
+
+section.hide{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
+
+/*Edição Footer*/
+footer{
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eee;
+}
